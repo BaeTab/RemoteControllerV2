@@ -12,6 +12,7 @@ namespace RemoteControllerVer2
             InitializeComponent();
             initEventHandler();
             startMonitorLocation();
+            timer1.Start();
         }
 
         private void startMonitorLocation()
@@ -41,6 +42,12 @@ namespace RemoteControllerVer2
             button7.Click += Button7_Click;
             button8.Click += Button8_Click;
             button9.Click += Button9_Click;
+            timer1.Tick += Timer1_Tick;
+        }
+
+        private void Timer1_Tick(object sender ,EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("yyyy년 MM월dd일 HH:mm:ss");
         }
 
         private void Button1_Click(object sender , EventArgs e)
