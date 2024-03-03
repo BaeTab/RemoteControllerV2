@@ -21,10 +21,12 @@ namespace RemoteControllerVer2
             Screen[] screens = Screen.AllScreens;
 
             // 세 번째 모니터가 존재하는지 확인
+            // 개인에 맞게 튜닝해주세요
             if (screens.Length >= 3)
             {
                 // 세 번째 모니터의 작업 영역 위치를 가져옴
-                Rectangle monitorBounds = screens[0].WorkingArea;
+                // 테스트 해보고 개인에 맞네 screens[] 안의 숫자 변경
+                Rectangle monitorBounds = screens[1].WorkingArea;
 
                 // 폼의 위치를 세 번째 모니터의 시작 위치로 설정
                 this.Location = new Point(monitorBounds.Left, monitorBounds.Top);
