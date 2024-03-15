@@ -54,7 +54,7 @@ namespace RemoteControllerVer2
 
         private void Button1_Click(object sender , EventArgs e)
         {
-            string[] startUrls = { "https://10.1.1.1", "https://192.168.1.120:8443/mc2/faces/adminlogin.xhtml", "https://192.168.1.141:8443/go/login", "https://192.168.10.20/era/webconsole/", "https://gw.majestar.asia/app/home" };
+            string[] startUrls = { "https://10.1.1.1", "https://192.168.1.120:8443/mc2/faces/adminlogin.xhtml", "https://192.168.1.141:8443/go/login", "https://us02.protect.eset.com/era/webconsole/", "https://gw.majestar.asia/app/home" };
             foreach (string url in startUrls)
             {
                 Process.Start(url);
