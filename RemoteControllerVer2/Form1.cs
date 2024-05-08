@@ -93,7 +93,7 @@ namespace RemoteControllerVer2
 
         private void Button8_Click(object sender, EventArgs e)
         {
-            Process.Start(@"C:\Program Files\WindowsApps\19282JackieLiu.Notepads-Beta_1.5.4.0_x64__echhpq9pdbte8\notepads.exe");
+            Process.Start("notepads.exe");
         }
 
         private void Button9_Click(object sender , EventArgs e)
